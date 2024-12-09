@@ -25,7 +25,8 @@ jQuery(document).ready(function() {
 });
 
 function getsora() {
-    fetch("http://api.alquran.cloud/v1/meta")
+    
+    fetch("https://api.alquran.cloud/v1/meta")
     .then(rest => rest.json())
     .then(data => {
         let soras = data.data.surahs.references;
