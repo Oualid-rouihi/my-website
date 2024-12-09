@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+    
+    left: 40%;
+    position: relative;
+}
+nav  li{
+    padding-left: 30px;
+    margin-top: 10px;
+    transition: 0.6s ease-in-out;
+    font-weight: 700;
+    font-size: 25px;
+
+}
+nav a{
+    border-bottom: solid 3px burlywood;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: none;
+    color: burlywood;
+    border-bottom: solid 3px white;
+}
+nav  ul li:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+nav {
+    background:rgba(0, 0, 0, 0.782);
+    color: white;
+    padding: 4px;
+    border: 3px solid black;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+
+
+.home{
+    background-image: url(image/abdullah-arif-Dxi6KbpvUgA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    animation: 10s walid infinite;
+    
+}
+@keyframes walid{
+    0%{
+        background-image: url(image/quran1.jpg);
+    }
+
+    50%{
+        background-image: url(image/quran2.jpg);
+    }
+    100%{
+        background-image: url(image/quran3.jpg);
+    }
+}
+#marqe{
+    direction: rtl;
+    
+}
+.aya{
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    color: rgb(255, 254, 254);
+    width: 30%;
+    font-size: 30px;
+
+
+}
+
+.titr{
+    text-align: center;
+    padding: 30px;
+    
+    
+}
+.titr h3{
+    color: white;
+    
+    
+}
+
+
+.quran{
+    background: rgba(0, 0, 0);
+    height: 100%;
+}
+
+.sora{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.sora .sorah{
+    min-height: 180px;
+    min-width: 150px;
+    box-shadow: 0 0 5px rgb(255, 254, 254);
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: burlywood;
+    font-size: 17px;
+
+}
+.sora .sorah:hover{
+    transform: scale(1.05);
+}
+
+
+
+.pop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background:white;
+    background-size: cover;
+    overflow-y: scroll;
+    transform: translateX(100%);
+}
+.pop.active{
+    transform: translateX(0);
+    transition: .7s all ease-in-out;
+}
+.pop::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+.pop::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.close{
+    position: sticky;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    
+    box-shadow:  0 0 10px black;
+    border-radius: 80px;
+    justify-content: center;
+    align-items: center;
+    
+    color: burlywood;
+    cursor: pointer;
+    
+    
+
+}
+
+.close p {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 10px;
+
+    
+}
+.pop .ayat{
+    padding: 20px;
+    width: calc(100% -40px);
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: center;
+    color: black;
+
+}
+.pop .ayat p{
+    margin-bottom: 10px;
+}
+.titre-dikr{
+    
+    padding: 40px;
+
+}
+.titre-dikr h3{
+    position: relative;
+    left: 40%;
+    
+    font-size: 50px;
+    font-weight: 900;
+    border-bottom: solid 5px burlywood;
+    width: 90px;
+}
+.titre-dikr p{
+    
+    padding-bottom: 20px;
+    left: 39%;
+    position: absolute;
+}
+#adkar{
+    margin-top: 20px;
+    margin-left: 110px;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    
+}
+.sabah{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    padding-top: 90px;
+    transition: 0.5s ease;
+    cursor: help;
+    border-radius: 5px 80px 5px 80px;
+    
+}
+
+.sabah h4{
+    text-align: center;
+    position: relative;
+    color: burlywood;
+    top: -40px;
+}
+.sabah button{
+    position: absolute;
+    left: 40%;
+    padding: 20px;
+    border-radius: 40px 5px 40px 5px;
+    border: none;
+    box-shadow: 0 0 10px burlywood;
+}
+.sabah:hover{
+    transform: scale(1.05);
+}
+.adkar-sabah{
+    border: solid 5px black;
+    background: white;
+    margin-top: 200px;
+    max-width: 600px;
+    margin-left: 500px;
+    margin-top: 70px;
+    border-radius: 50px;
+}
+.adkar-sabah p{
+    color: black;
+    padding: 30px;
+    
+    text-shadow: 0 0 20px burlywood;
+
+    
+}
+.adkar-sabah h3{
+    text-align: center;
+}
+#myCarousel{
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+.h4 h4{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 0 0 20px burlywood;
+    
+
+}
+.close2 button{
+    margin-top: 100px;
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+    
+
+}
+.close2:hover{
+    background: black;
+}
+.carousel-item h3{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    text-shadow: 0 0 20px burlywood;
+}
+
+#myCarousel4{
+    height: 100%;
+}
+/* .close2 i{
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    border-radius: 20px;
+    
+    cursor: pointer;
+} */
+.sabahnone{
+    display: none;
+}
+footer{
+    background: black;
+    
+    z-index: 0;
+}
+footer .titr-foter{
+    font-size: 45px;
+    font-weight: 700;
+    width: 130px;
+    
+    border-bottom:3px solid white ;
+}
+footer a{
+    color: burlywood;
+}
+footer p{
+    font-size: 16px;
+    color: white;
+}
+footer #contact {
+    margin-left:  100px;
+    padding-top: 10px;
+}
+.fotr h3{
+    font-size: 19px;
+    color: white;
+    padding-top: 30px;
+    color: burlywood;
+    font-weight: 800;
+    border-bottom: 3px solid white;
+}
+.fotr ul{
+    list-style: none;
+    margin-left: -20px;
+    transition: ease 0.3s;
+}
+.fotr ul li{
+    padding-bottom: 6px;
+    transition: ease 0.3s;
+}
+.fotr ul li:hover{
+    transform: scale(1.1);
+}
+.fotr a{
+    color: white;
+    
+}
+.fotr a:hover{
+    color: burlywood;
+    text-decoration: none;
+    
+    
+}
+footer span{
+    color: rgb(255, 255, 255);
+}
+footer h5{
+    color: burlywood;
+}
+
+@media screen and (max-width:500px) {
+    .home{
+        height: 60vh;
+        background-position: bottom bottom;
+    }
+    .home .aya p{
+        color: rgba(255, 255, 255, 0.905);
+        font-size: 15px;
+        position: absolute;
+        margin-top: -300px;
+        width:400px;
+        right: -90%;
+    }
+    nav ul{
+        left: 18%;
+    }
+    nav li a{
+        font-size: 17px;
+    }
+    #adkar .sabah{
+        left: -20%;
+        width: 80%;
+    }
+    .titre-dikr{
+        left: -30%;
+    }
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: -200%;
+    }
+}
+
+/*     -----adkar masae---- */
+#myCarousel2{
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+
+.close3 button{
+    margin-top: 100px;
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+
+
+}
+.close3:hover{
+    background: black;
+}
+
+/*     -----adkar ةشستهي---- */
+#myCarousel3{
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+
+.close4 button{
+    margin-top: 100px;
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+    
+
+}
+.close4:hover{
+    background: black;
+}
+
+
+
+/* adkar isti9ad  */
+#myCarousel4{
+    
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+
+.close5 button{
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+    margin-top: 100px;
+    
+
+}
+.close5:hover{
+    background: black;
+}
+
+/* adkar wdo2e  */
+#myCarousel5{
+    
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+
+.close6 button{
+    margin-top: 100px;
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+    
+
+}
+.close6:hover{
+    background: black;
+}
+
+/* adkar manzil  */
+#myCarousel6{
+    background: rgba(0, 0, 0, 0.796);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 00;
+}
+
+.close7 button{
+    margin-top: 100px;
+    margin-left: 1450px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood;
+    border-radius: 20px;
+    visibility: hidden;
+    
+
+}
+.close7:hover{
+    background: black;
+}
+
